@@ -1,0 +1,23 @@
+# Build artifacts
+bin/
+obj/
+.DS_Store
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs and temp files
+logs/
+*.log
+*.cache
+
+# Environment & secrets
+.env
+appsettings*.json
+
+# Dependencies
+.vscode/
+node_modules/
+wwwroot/

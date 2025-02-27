@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jpanfr0azgk=",
+  "dgSpecHash": "PCL10Plv/ME=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Micha\\Desktop\\local-repos\\TheGamePort\\backend-api\\backend-api.csproj",
+  "projectFilePath": "/Users/michael/Desktop/local-repo-mac/GamePort/GamePort-backend-api/backend-api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Micha\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
-    "C:\\Users\\Micha\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+    "/Users/michael/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/Users/michael/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
   ],
   "logs": []
 }
