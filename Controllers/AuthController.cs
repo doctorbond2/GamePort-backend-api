@@ -14,8 +14,7 @@ namespace GamePortApi.Controllers
         private readonly ILogger<AuthController> _logger = logger;
 
         [HttpPost("login")]
-        [EnableCors("AllowAll")]
-        public IActionResult Login([FromBody] LoginRequest loginRequest)
+        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
         {
             _logger.LogInformation("Login request received: {Username}", loginRequest.Username);
             if (loginRequest == null || string.IsNullOrEmpty(loginRequest.Username) || string.IsNullOrEmpty(loginRequest.Password))
@@ -23,7 +22,7 @@ namespace GamePortApi.Controllers
                 return BadRequest(new { Message = "Invalid login request." });
             }
 
-            bool isAuthenticated = _authService.LoginAsync(loginRequest).Result;
+            bool isAuthenticated = await _authService.LoginAsync(loginRequest);
 
             if (isAuthenticated)
             {
